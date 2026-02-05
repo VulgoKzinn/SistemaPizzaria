@@ -1,0 +1,62 @@
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: green;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+header img {
+    width: 80px;
+}
+
+header nav ul :hover {
+    /* background: #ffa917; */
+    border-radius: 3px;
+    color: #fff;
+}
+/* /////////////////////////////////////////////// */
+
+/* FOOTER */
+#redes {
+    display: flex;
+    justify-content: center;
+    background: red;
+    padding: 100px 0;
+    gap: 20px;
+}
+
+#cop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: green;
+    color: #FFF;
+    font-weight: bold;
+}
+
+#topo {
+    position: fixed;
+    bottom: 18px;
+    right: 10px;
+    padding: 10px;
+}
+
+#topo a {
+    text-decoration: none;
+    color: green;
+}
