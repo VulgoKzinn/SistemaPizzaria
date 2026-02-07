@@ -14,10 +14,13 @@ include "backend/session.php";
 </head>
 <body>
 <h1>Painel Admin</h1>
-<a href="backend/logout.php">Sair</a></p>
+<a href="admin.php"><button>Home</button></a>
+<a href="backend/logout.php"><button>Sair</button></a></p>
 
-<a href="pizza.php">Cadastro Pizza</a>
-<a href="tipo.php">Cadastro Tipo</a>
+<a href="pizza.php"><button>Cadastro Pizza</button></a>
+<a href="tipo.php"><button>Cadastro Categoria</button></a>
+<a href="lista_pizza.php"><button>Listagem de Pizzas</button></a>
+<a href="lista_tipo.php"><button>Listagem Categoria</button></a>
 
 </body>
 </html>

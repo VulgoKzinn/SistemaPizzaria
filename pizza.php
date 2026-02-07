@@ -21,6 +21,8 @@ try {
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a href="admin.php"><button>Home</button></a>
+<a href="backend/logout.php"><button>Sair</button></a></p>
     <main>
         <form action="backend/functions/cadastrar_pizza.php" method="POST" enctype="multipart/form-data">
             <input type="text" name="sabor" placeholder="Sabor da Pizza" required><br><br>

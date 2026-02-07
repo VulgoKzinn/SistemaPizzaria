@@ -11,8 +11,7 @@ try {
    $comando = $conexao->prepare($sql);
    $comando->execute();
    $pizzas = $comando->fetchAll(PDO::FETCH_ASSOC);
-//    echo "<pre>";
-//    var_dump($pets);
+
 } catch (PDOException $err) {
     error_log($err->getMessage());
     echo "Não foi possível listar os dados!";    
@@ -23,10 +22,13 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adote um Pet - Lista</title>
+    <title>Lista Pizzas</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a href="admin.php"><button>Home</button></a>
+<a href="pizza.php"><button>Voltar</button></a>
+<a href="backend/logout.php"><button>Sair</button></a></p>
     <main>
         <table>
             <tr>
@@ -52,7 +54,7 @@ try {
                 <td><?php echo $pizza['ativo'];?></td>
                 <td>
                     <a href="editar_pizza.php?id=<?php echo $pizza['id'];?>">Editar</a>                    
-                    <a href="backend/deletar_piza.php?id=<?php echo $pizza['id'];?>">Deletar</a>                    
+                    <a href="backend/functions/deletar_pizza.php?id=<?php echo $pizza['id'];?>">Deletar</a>                    
                 </td>
             </tr>
             <?php
